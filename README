@@ -1,0 +1,6 @@
+dotfiles
+
+.vimrc
+.vim/
+
+.tmux.conf
