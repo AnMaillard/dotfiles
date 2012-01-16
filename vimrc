@@ -39,3 +39,6 @@ set backupdir=~/.tmp//,/tmp//,.
 set ignorecase
 set infercase
 set smartcase
+
+" Skeleton files
+autocmd! BufNewFile * silent! 0r ~/.vim/skel/template.%:e
