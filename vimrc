@@ -22,6 +22,7 @@ set cindent
 " Running gui?
 if has("gui_running")
 	colorscheme spring 
+    set go=m
 end
 
 " Useful Mappings 

@@ -24,3 +24,10 @@ alias v="vim"
 alias g="git"
 alias m="hg"
 alias s="svn"
+
+# arch linux
+alias chromium='chromium --disk-cache-dir=/home/dicai/.config/chromium/cache'
+export EDITOR='vim'
+alias pacman='sudo pacman_program=pacman-color pacmatic'
+alias ipython='ipython2'
+
