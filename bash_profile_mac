@@ -3,9 +3,6 @@
 # use bash vi editing mode
 set -o vi
 
-# start tmux every terminal
-[[ $TERM != "screen" ]] && tmux && exit
-
 source ~/.bash_aliases
  
 export CLICOLOR=1
