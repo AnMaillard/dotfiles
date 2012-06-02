@@ -7,3 +7,5 @@ exec ck-launch-session startxfce4
 
 # init xmodmap
 xmodmap ~/.Xmodmap
+
+mpd &
