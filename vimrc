@@ -21,7 +21,7 @@ set cindent
 
 " Running gui?
 if has("gui_running")
-	colorscheme spring 
+	colorscheme caramel 
     set go=m
 end
 
