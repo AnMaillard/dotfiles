@@ -18,7 +18,12 @@ export PATH=$HOME/bin:$PATH
 export PATH=/usr/local/bin:$PATH
 
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+#export PYTHONPATH=/Users/dicai/Dropbox/Courses/cs222/cs222final/graph_package_branch
+export PYTHONPATH=$PYTHONPATH:/Users/dicai/git/graph_package
 
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 #PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
-export PATH
+
+export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-65
+#export EDITOR=/usr/local/Cellar/macvim/7.3-65/bin/mvim 
+
