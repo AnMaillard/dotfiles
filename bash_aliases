@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# steam
+alias steam='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-dwrite'
+
 # ssh stuff
 alias sshseas='ssh dcai@seas.harvard.edu'
 alias ssheecs='ssh dcai@eecs.harvard.edu'
@@ -30,4 +33,4 @@ alias chromium='chromium --disk-cache-dir=/home/dicai/.config/chromium/cache'
 export EDITOR='vim'
 alias pacman='sudo pacman_program=pacman-color pacmatic'
 alias ipython='ipython2'
-
+alias opendvd='vlc /dev/sr0'
