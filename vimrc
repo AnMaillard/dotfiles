@@ -18,11 +18,22 @@ set smarttab
 set autoindent
 set cindent
 
+" Highlight column 81
+set textwidth=80
+set colorcolumn=+1
+hi ColorColumn guibg=#2d2d2d ctermbg=246
+
 
 " Running gui?
 if has("gui_running")
-	colorscheme caramel 
+	"colorscheme caramel 
     set go=m
+    set go-=T
+    set bg=dark
+    if &background == "dark"
+        hi normal guibg=black
+        set transp=6
+    endif
 end
 
 " Useful Mappings 
