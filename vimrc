@@ -32,6 +32,7 @@ if has("gui_running")
     set bg=dark
     if &background == "dark"
         hi normal guibg=black
+        hi ColorColumn guibg=#2d2d2d ctermbg=246
         set transp=6
     endif
 end

@@ -6,7 +6,7 @@ set -o vi
 source ~/.bash_aliases
  
 export CLICOLOR=1
-export LSCOLORS=GxDxCxFxBxegedabagacad
+#export LSCOLORS=GxDxCxFxBxegedabagacad
 
 # colors
 PS1='\[\e[1;34m\]\w \[\e[1;32m\]$ \[\e[m\]'
@@ -20,10 +20,12 @@ export PATH=/usr/local/bin:$PATH
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 #export PYTHONPATH=/Users/dicai/Dropbox/Courses/cs222/cs222final/graph_package_branch
 export PYTHONPATH=$PYTHONPATH:/Users/dicai/git/graph_package
+export PYTHONPATH=$PYTHONPATH:/Users/dicai/git/bocpd_seas
+export PYTHONPATH=$PYTHONPATH:/Users/dicai/svn/cocktails
 
 export PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
 #PATH="/Library/Frameworks/Python.framework/Versions/2.6/bin:${PATH}"
 
-export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-65
+export VIM_APP_DIR=/usr/local/Cellar/macvim/7.3-66
 #export EDITOR=/usr/local/Cellar/macvim/7.3-65/bin/mvim 
 
