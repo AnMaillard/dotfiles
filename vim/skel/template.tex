@@ -7,10 +7,30 @@
 \usepackage{verbatim, graphicx}
 \usepackage[linkbordercolor={1 0 0}, colorlinks=true, urlcolor=magenta]{hyperref}
 \usepackage{sectsty}
+\usepackage{algorithm, algpseudocode}
+\usepackage{titling}
+\renewcommand{\maketitlehooka}{\sffamily}
 \allsectionsfont{\sffamily\mdseries\upshape}
 
-\pagestyle{fancyplain}
+% useful macros
+\newcommand{\eqdef}{=\vcentcolon}
 
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\Om}{\Omega}
+\newcommand{\sa}{\sigma\text{-algebra}}
+
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\Var}{\text{Var}}
+
+\newtheorem*{mydef}{Definition}
+\newtheorem*{mythm}{Theorem}
+\newtheorem*{myex}{Example}
+\newtheorem*{remark}{Remark}
+
+
+% page style stuff
+\pagestyle{fancyplain}
 \lhead{title}
 \rhead{Diana Cai}
 
