@@ -6,6 +6,10 @@ set nocompatible
 set encoding=utf-8
 colorscheme desert
 
+"if has('gui_running')
+"    colorscheme zenburn
+"endif
+
 " Visual appearance.
 syntax on
 set number
@@ -123,6 +127,8 @@ nnoremap <Leader>u :GundoToggle<CR>
 
 Bundle 'derekwyatt/vim-scala'
 
+Bundle 'flazz/vim-colorschemes'
+
 "Bundle 'SirVer/ultisnips'
 "let g:UltiSnipsEditSplit="vertical"
 "let g:UltiSnipsSnippetsDir="~/.vim/snippets"
@@ -142,8 +148,9 @@ let g:tex_flavor="latex"
 " Set the make program (rubber)
 autocmd FileType tex set makeprg=rubber\ --inplace\ --maxerr\ 1\ \ --pdf\ --short\ --quiet\ --force\ %
 " Mappings for compiling Latex file
-"autocmd FileType nmap <buffer> <C-T> :!rubber --pdf --force --short %<CR>
-autocmd FileType nmap <buffer> T :!open %<.pdf<CR><CR>
+autocmd FileType tex nmap <buffer> <C-T> :!rubber --pdf --force --short %<CR>
+autocmd FileType tex nmap <buffer> T :!open %<.pdf<CR><CR>
+autocmd FileType tex nmap <buffer> C :!rubber --clean<CR>
 
 "autocmd FileType py,c,cpp,m,r filetype indent on
 
