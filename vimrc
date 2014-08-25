@@ -129,6 +129,8 @@ Bundle 'derekwyatt/vim-scala'
 
 Bundle 'flazz/vim-colorschemes'
 
+Plugin 'JuliaLang/julia-vim'
+
 "Bundle 'SirVer/ultisnips'
 "let g:UltiSnipsEditSplit="vertical"
 "let g:UltiSnipsSnippetsDir="~/.vim/snippets"
