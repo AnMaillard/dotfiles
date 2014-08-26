@@ -113,21 +113,23 @@ function! DiffToggle()
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
 filetype off
-set rtp+=~/.vim/bundle/vundle
-call vundle#rc()
 
-Bundle 'gmarik/vundle'
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Bundle 'godlygeek/tabular'
+Plugin 'gmarik/Vundle.vim'
+
+Plugin 'godlygeek/tabular'
 nnoremap <Leader>a :Tabularize /&<CR>
 vnoremap <Leader>a :Tabularize /&<CR>
 
-Bundle 'sjl/gundo.vim'
+Plugin 'sjl/gundo.vim'
 nnoremap <Leader>u :GundoToggle<CR>
 
-Bundle 'derekwyatt/vim-scala'
+Plugin 'derekwyatt/vim-scala'
 
-Bundle 'flazz/vim-colorschemes'
+Plugin 'flazz/vim-colorschemes'
 
 Plugin 'JuliaLang/julia-vim'
 
@@ -136,6 +138,8 @@ Plugin 'JuliaLang/julia-vim'
 "let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 "let g:UltiSnipsSnippetDirectories=["snippets"]
 
+call vundle#end()            " required
+filetype plugin indent on    " required
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Filetype specific
