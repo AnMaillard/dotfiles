@@ -133,6 +133,8 @@ Plugin 'flazz/vim-colorschemes'
 
 Plugin 'JuliaLang/julia-vim'
 
+Plugin 'jhradilek/vim-snippets'
+
 "Bundle 'SirVer/ultisnips'
 "let g:UltiSnipsEditSplit="vertical"
 "let g:UltiSnipsSnippetsDir="~/.vim/snippets"
