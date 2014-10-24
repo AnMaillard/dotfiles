@@ -133,10 +133,15 @@ Plugin 'flazz/vim-colorschemes'
 
 Plugin 'JuliaLang/julia-vim'
 
-Plugin 'jhradilek/vim-snippets'
+Plugin 'kevinw/pyflakes-vim'
 
-"Bundle 'SirVer/ultisnips'
-"let g:UltiSnipsEditSplit="vertical"
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsEditSplit="vertical"
 "let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 "let g:UltiSnipsSnippetDirectories=["snippets"]
 
