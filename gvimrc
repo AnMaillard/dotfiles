@@ -1,5 +1,5 @@
 colorscheme bluegreen
-set guifont=Monaco:h17
+set guifont=Menlo:h17
 
 
 
