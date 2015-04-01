@@ -1,5 +1,10 @@
 #!/bin/bash
 
+alias skim='open -a skim'
+
+# steam
+alias steam='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-dwrite'
+
 # ssh stuff
 alias sshseas='ssh dcai@seas.harvard.edu'
 alias ssheecs='ssh dcai@eecs.harvard.edu'
@@ -13,7 +18,6 @@ alias ssh61="ssh dcai@cs61-login.seas.harvard.edu"
 alias sshcs265="ssh mattisgone@140.247.61.71"
 alias sshadama="ssh adama.fas.harvard.edu"
 alias ssh161="ssh dcai@cs161.eecs.harvard.edu"
-alias ssh221="ssh dianacai@login.rc.fas.harvard.edu"
 
 # mysql
 alias mysql="/usr/local/mysql/bin/mysql"
@@ -25,11 +29,10 @@ alias v="vim"
 alias g="git"
 alias m="hg"
 alias s="svn"
-alias g++="g++-4.7"
-alias gcc="gcc-4.7"
 
 # arch linux
 alias chromium='chromium --disk-cache-dir=/home/dicai/.config/chromium/cache'
 export EDITOR='vim'
 alias pacman='sudo pacman_program=pacman-color pacmatic'
-#alias ipython='ipython2'
+alias ipython='ipython2'
+alias opendvd='vlc /dev/sr0'
