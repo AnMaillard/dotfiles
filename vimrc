@@ -6,9 +6,10 @@ set nocompatible
 set encoding=utf-8
 colorscheme desert
 
-"if has('gui_running')
-"    colorscheme zenburn
-"endif
+if has('gui_running')
+"    colorscheme grb256
+    colorscheme bluegreen
+endif
 
 " Visual appearance.
 syntax on
@@ -133,7 +134,8 @@ Plugin 'flazz/vim-colorschemes'
 
 Plugin 'JuliaLang/julia-vim'
 
-Plugin 'kevinw/pyflakes-vim'
+
+Plugin 'scrooloose/syntastic'
 
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
@@ -164,6 +166,12 @@ autocmd FileType tex set makeprg=rubber\ --inplace\ --maxerr\ 1\ \ --pdf\ --shor
 autocmd FileType tex nmap <buffer> <C-T> :!rubber --pdf --force --short %<CR>
 autocmd FileType tex nmap <buffer> T :!open %<.pdf<CR><CR>
 autocmd FileType tex nmap <buffer> C :!rubber --clean<CR>
+" Turn on and off line numbers
+"autocmd FileType tex nmap <buffer> <C-Y> :set nonumber<CR>
+"autocmd FileType tex nmap <buffer> <C-LL> :set number<CR>
+" Turn on and off paste mode
+"autocmd FileType tex nmap <buffer> <C-K> :set paste<CR>
+"autocmd FileType tex nmap <buffer> <C-KK> :set nopaste<CR>
 
 "autocmd FileType py,c,cpp,m,r filetype indent on
 
