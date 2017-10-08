@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# skim
+alias skim='open -a Skim'
+
 # steam
 alias steam='wine ~/.wine/drive_c/Program\ Files\ \(x86\)/Steam/Steam.exe -no-dwrite'
 
