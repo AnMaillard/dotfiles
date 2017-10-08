@@ -113,32 +113,30 @@ function! DiffToggle()
 " Plugins
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-filetype off
 
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+" plugins
+call plug#begin('~/.vim/plugged')
 
-Plugin 'gmarik/Vundle.vim'
+Plug 'gmarik/Vundle.vim'
 
-Plugin 'godlygeek/tabular'
+Plug 'godlygeek/tabular'
 nnoremap <Leader>a :Tabularize /&<CR>
 vnoremap <Leader>a :Tabularize /&<CR>
 
-Plugin 'sjl/gundo.vim'
+Plug 'sjl/gundo.vim'
 nnoremap <Leader>u :GundoToggle<CR>
 
-Plugin 'derekwyatt/vim-scala'
+Plug 'derekwyatt/vim-scala'
 
-Plugin 'flazz/vim-colorschemes'
+Plug 'flazz/vim-colorschemes'
 
-Plugin 'JuliaLang/julia-vim'
+Plug 'JuliaLang/julia-vim'
 
 
-Plugin 'scrooloose/syntastic'
+Plug 'scrooloose/syntastic'
 
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
@@ -147,8 +145,8 @@ let g:UltiSnipsEditSplit="vertical"
 "let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 "let g:UltiSnipsSnippetDirectories=["snippets"]
 
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()            " required
+"filetype plugin indent on    " required
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Filetype specific
