@@ -135,13 +135,13 @@ Plug 'JuliaLang/julia-vim'
 
 Plug 'scrooloose/syntastic'
 
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+"Plug 'SirVer/ultisnips'
+"Plug 'honza/vim-snippets'
 
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsEditSplit="vertical"
+"let g:UltiSnipsExpandTrigger="<tab>"
+"let g:UltiSnipsJumpForwardTrigger="<c-b>"
+"let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+"let g:UltiSnipsEditSplit="vertical"
 "let g:UltiSnipsSnippetsDir="~/.vim/snippets"
 "let g:UltiSnipsSnippetDirectories=["snippets"]
 
@@ -159,10 +159,11 @@ let g:tex_flavor="latex"
 
 "autocmd FileType tex set autoindent
 " Set the make program (rubber)
-autocmd FileType tex set makeprg=rubber\ --inplace\ --maxerr\ 1\ \ --pdf\ --short\ --quiet\ --force\ %
+"autocmd FileType tex set makeprg=rubber\ --inplace\ --maxerr\ 1\ \ --pdf\ --short\ --quiet\ --force\ %
 " Mappings for compiling Latex file
-autocmd FileType tex nmap <buffer> <C-T> :!rubber --pdf --force --short %<CR>
-autocmd FileType tex nmap <buffer> T :!open %<.pdf<CR><CR>
+autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf %<CR>
+"autocmd FileType tex nmap <buffer> <C-T> :!rubber --pdf --force --short %<CR>
+autocmd FileType tex nmap <buffer> T :!open -a Skim %<.pdf<CR><CR>
 autocmd FileType tex nmap <buffer> C :!rubber --clean<CR>
 " Turn on and off line numbers
 "autocmd FileType tex nmap <buffer> <C-Y> :set nonumber<CR>
