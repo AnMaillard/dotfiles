@@ -160,7 +160,7 @@ let g:tex_flavor="latex"
 " Set the make program (rubber)
 autocmd FileType tex set makeprg=rubber\ --inplace\ --maxerr\ 1\ \ --pdf\ --short\ --quiet\ --force\ %
 " Mappings for compiling Latex file
-autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf -silent %<CR>
+autocmd FileType tex nmap <buffer> <C-T> :!latexmk -pdf %<CR>
 "autocmd FileType tex nmap <buffer> <C-T> :!rubber --pdf --force --short %<CR>
 autocmd FileType tex nmap <buffer> T :!open -a Skim %<.pdf %<.pdf<CR><CR>
 autocmd FileType tex nmap <buffer> C :!rubber --clean<CR>
