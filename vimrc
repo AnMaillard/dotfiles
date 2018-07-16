@@ -6,10 +6,14 @@ set nocompatible
 set encoding=utf-8
 colorscheme desert
 
-if has('gui_running')
-"    colorscheme grb256
-    colorscheme bluegreen
+if has('python3')
+  silent! python3 1
 endif
+
+"if has('gui_running')
+"    colorscheme grb256
+"    colorscheme bluegreen
+"endif
 
 " Visual appearance.
 syntax on
@@ -136,6 +140,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'severin-lemaignan/vim-minimap'
+
+let g:UltiSnipsUsePythonVersion = 3
 
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
